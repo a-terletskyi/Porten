@@ -1,0 +1,148 @@
+@import url(styles/reset.css);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:regular,700);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,700);
+
+.flex {
+    display: flex;
+}
+
+.pt-sans {
+    Font-family: PT Sans;
+    color: #969696;
+}
+
+.header-top {
+    background-color: black;
+}
+
+.header-container, .container {
+    width: 57.8%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.header-container {
+    padding: 12px 0;
+}
+
+.info-text, .account-text {
+    flex-wrap: wrap;
+    Font-size: 12px;
+    Line-height: 16px;
+}
+
+.account-text, .logo a, .menu-link a, .menu-link, .header-info a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.icon {
+    padding: 0 14px 0 0;
+}
+
+.line {
+    padding: 0 10px;
+}
+
+.header-menu {
+    border: 1px solid #000;
+    background-color: #0F0F0F;
+}
+
+.menu-link, .menu-link1, .menu-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu-link {
+    width: 136px;
+    height: 80px;
+}
+
+.menu-link:hover {
+    background-color: #1F1F1F;
+}
+
+.menu-link:hover a {
+    color: #FFFFFF;
+}
+
+.menu-link a {
+    Font-size: 14px;
+    Line-height: 18px;
+    text-transform: uppercase;
+}
+
+.menu-link1 {
+    margin: 20px;
+}
+
+.first-screen_logo {
+    background-image: url(./styles/images/background.png);
+    background-size: cover;
+}
+
+.first-screen_logo_container {
+    width: 38%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.first-screen_logo_container img {
+    padding: 158px 0 0 0;
+}
+
+.first-screen_logo_container p {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 78px 0 155px 0;
+}
+
+.first-screen_new_season, .first-screen_new_collection {
+    height: 730px;
+}
+
+.first-screen_new_season {
+    width: 54.2%;
+    background-color: #000;
+}
+
+.first-screen_new_collection {
+    width: 45.8%;
+    background-image: url(./styles/images/collection.png);
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: #0F0F0F;
+}
+
+.footer p {
+    font-family: PT Sans;
+    font-size: 12px;
+    line-height: 16px;
+    color: #D0D0D0;
+    padding: 17px 0;
+}
+
+.footer p:last-child {
+    text-decoration: underline;
+}
