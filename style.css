@@ -122,6 +122,14 @@
     background-size: cover;
 }
 
+.title{
+    font-family: Playfair Display;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
 
 
 
