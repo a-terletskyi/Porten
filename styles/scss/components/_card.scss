@@ -1,0 +1,26 @@
+.goods{
+    min-width: 260px;
+    min-height: 405px;
+    margin-right: 50px;
+
+    .goods-image{
+        @include d-flex(center,center);
+        width: 100%;
+        min-height: 325px;
+        margin-bottom: 25px;
+        background-color: #191b1c;
+    }
+
+    &__title{
+        @include text(Playfair Display, 18px, 21px, #ffffff);
+        margin-bottom: 10px;
+    }
+
+    &__text{
+        @include text(Playfair Display, 16px, 19px, #d0d0d0);
+    }
+}
+
+.goods:last-child {
+    margin: 0;
+}

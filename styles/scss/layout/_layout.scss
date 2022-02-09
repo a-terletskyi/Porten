@@ -1,0 +1,175 @@
+// Hero
+.hero {
+    @include d-flex(center, center);
+    min-height: 810px;
+    background-image: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+
+    .container {
+        width: 38%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__text {
+        @include text(PT Sans, 16px, 24px, #ffffff);
+        margin-top: 76px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+// New
+.new {
+    .season {
+        width: 54.2%;
+        min-height: 730px;
+        padding: 93px 80px;
+        background-color: #000;
+
+        &__title {
+            @include text(Playfair Display, 36px, 42px, #ffffff);
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        .line {
+            margin: 44px auto 50px;
+        }
+
+        .d-flex {
+            justify-content: center;
+        }
+    }
+
+    .collection {
+        @include d-flex(end, center);
+        flex-direction: column;
+        width: 45.8%;
+        padding: 100px 80px;
+        background-image: url(images/collection.png);
+        background-position: center;
+        background-size: cover;
+
+        &__title {
+            @extend .season__title;
+        }
+
+        .line {
+            margin: 22px auto 29px;
+        }
+
+        &__link {
+            @include text(PT Sans, 18px, 23px, #ffffff);
+            border: 1px solid #ffffff;
+            padding: 12px 28px;
+            letter-spacing: 0.1em;
+        }
+    }
+}
+//  collection-2018
+.collection-2018 {
+    .suit {
+        width: 45.8%;
+        min-height: 600px;
+        background-image: url(images/suit.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .collection-18 {
+        @include d-flex(center, center);
+        width: 54.2%;
+        min-height: 600px;
+        background-color: #000000;
+        text-align: center;
+
+        .container {
+            width: 45%;
+        }
+
+        &__title {
+            @include text(Playfair Display, 36px, 42px, #ffffff);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .line {
+            margin: 40px auto;
+        }
+
+        &__text {
+            @include text(PT Sans, 14px, 21px, #ffffff);
+            margin-bottom: 61px;
+        }
+
+        &__link {
+            @include text(PT Sans, 18px, 23px, #ffffff);
+            border: 1px solid #ffffff;
+            padding: 12px 28px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+    }
+}
+// New-goods
+.new-goods {
+    padding: 120px 0 150px;
+    background-color: #000000;
+
+    &__title {
+        @include text(Playfair Display, 36px, 42px, #ffffff);
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .line {
+        margin: 40px auto 81px;
+    }
+
+    .d-flex {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .goods {
+        margin-right: 23px;
+    }
+
+    .goods:nth-child(-n + 4) {
+        margin-bottom: 40px;
+    }
+
+    .goods:nth-child(4n) {
+        margin-right: 0;
+    }
+}
+// Brands
+.brands {
+    background-color: #000000;
+    padding: 60px 0 80px;
+
+    &__title {
+        @include text(Playfair Display, 36px, 42px, #ffffff);
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .line {
+        margin: 40px auto;
+    }
+
+    .d-flex {
+        justify-content: center;
+    }
+
+    &__logo {
+        margin-right: 30px;
+    }
+
+    &__logo:last-child {
+        margin-right: 0;
+    }
+}

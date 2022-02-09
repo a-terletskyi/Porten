@@ -1,0 +1,76 @@
+.footer-top {
+    background-image: url(images/footer-background.png);
+    background-position: center;
+    background-size: cover;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 80px 0 101px 0;
+    }
+}
+
+.about {
+    width: 350px;
+
+    &__title {
+        @include text(Playfair Display, 24px, 28px, #ffffff);
+        padding-bottom: 40px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    &__text {
+        @include text(PT Sans, 14px, 21px, #ffffff);
+    }
+}
+
+.categories {
+    width: 350px;
+
+    &__title {
+        @extend .about__title;
+    }
+
+    .d-flex {
+        flex-wrap: wrap;
+    }
+
+    &__link {
+        @include text(PT Sans, 14px, 21px, #d0d0d0);
+        padding: 10px 20px;
+        background-color: #0f0f0f;
+    }
+    // треба добавити додатковий клас і задати маржини
+}
+
+.mailing-list {
+    width: 350px;
+
+    &__title {
+        @extend .about__title;
+    }
+
+    &__text {
+        @extend .about__text;
+        padding-bottom: 37px;
+    }
+    // застилізувати форму, уточнити чи правильно я її створив
+}
+
+.last-line {
+    background-color: #0f0f0f;
+
+    .container {
+        @include d-flex(space-between, center);
+    }
+
+    &__text {
+        @include text(PT Sans, 12px, 16px, #d0d0d0);
+        padding: 17px 0;
+    }
+
+    &__text:last-child {
+        text-decoration: underline;
+    }
+}

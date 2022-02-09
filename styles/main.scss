@@ -1,0 +1,24 @@
+// 
+@import
+ 'scss/base/reset',
+ 'scss/base/fonts';
+// 
+@import
+'scss/config/base',
+ 'scss/config/variables',
+ 'scss/config/mixins';
+//  
+@import
+ 'scss/objects/buttons',
+ 'scss/objects/line';
+//  
+@import
+ 'scss/components/card';
+// 
+@import
+ 'scss/layout/header',
+ 'scss/layout/layout',
+ 'scss/layout/footer';
+//  
+@import
+ 'scss/responsive/responsive';

@@ -1,0 +1,24 @@
+@mixin d-flex($jc, $ai) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin text($family, $size, $line-h, $color) {
+    font-family: $family;
+    font-size: $size;
+    line-height: $line-h;
+    color: $color;
+}
+
+@mixin square($w, $h, $bg-color) {
+    width: $w;
+    height: $h;
+    background-color: $bg-color;
+}
+
+@mixin background {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

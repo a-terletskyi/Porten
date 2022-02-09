@@ -1,0 +1,542 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:regular,700);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,700);
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, hr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  font-family: PT Sans;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container {
+  width: 57.8%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.line {
+  width: 120px;
+  border: 1px solid #ffffff;
+  margin: 0 auto;
+}
+
+.goods {
+  min-width: 260px;
+  min-height: 405px;
+  margin-right: 50px;
+}
+
+.goods .goods-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 325px;
+  margin-bottom: 25px;
+  background-color: #191b1c;
+}
+
+.goods__title {
+  font-family: Playfair Display;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.goods__text {
+  font-family: Playfair Display;
+  font-size: 16px;
+  line-height: 19px;
+  color: #d0d0d0;
+}
+
+.goods:last-child {
+  margin: 0;
+}
+
+.top {
+  background-color: #000000;
+}
+
+.top .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 0;
+}
+
+.top .info__text, .top .info__link, .top .info__line, .top .account__link {
+  font-family: PT Sans;
+  font-size: 12px;
+  line-height: 16px;
+  color: #969696;
+}
+
+.top .info__icon {
+  padding: 0 11px 0 0;
+  vertical-align: sub;
+}
+
+.top .info__line {
+  padding: 0 10px;
+}
+
+.top .account__icon {
+  padding: 0 7px 0 0;
+  vertical-align: sub;
+}
+
+.navigation {
+  min-height: 80px;
+  background-color: #0f0f0f;
+  border: 1px solid #000000;
+}
+
+.navigation .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation .menu__list {
+  margin-right: 30px;
+}
+
+.navigation .menu__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: PT Sans;
+  font-size: 14px;
+  line-height: 18px;
+  color: #969696;
+  width: 136px;
+  height: 80px;
+  text-transform: uppercase;
+}
+
+.navigation .menu__link:hover {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+.navigation .menu .search {
+  margin-left: 40px;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 810px;
+  background-image: url(images/background.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.hero .container {
+  width: 38%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero__text {
+  font-family: PT Sans;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-top: 76px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.new .season {
+  width: 54.2%;
+  min-height: 730px;
+  padding: 93px 80px;
+  background-color: #000;
+}
+
+.new .season__title, .new .collection__title {
+  font-family: Playfair Display;
+  font-size: 36px;
+  line-height: 42px;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.new .season .line {
+  margin: 44px auto 50px;
+}
+
+.new .season .d-flex {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.new .collection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 45.8%;
+  padding: 100px 80px;
+  background-image: url(images/collection.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.new .collection .line {
+  margin: 22px auto 29px;
+}
+
+.new .collection__link {
+  font-family: PT Sans;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 12px 28px;
+  letter-spacing: 0.1em;
+}
+
+.collection-2018 .suit {
+  width: 45.8%;
+  min-height: 600px;
+  background-image: url(images/suit.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.collection-2018 .collection-18 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 54.2%;
+  min-height: 600px;
+  background-color: #000000;
+  text-align: center;
+}
+
+.collection-2018 .collection-18 .container {
+  width: 45%;
+}
+
+.collection-2018 .collection-18__title {
+  font-family: Playfair Display;
+  font-size: 36px;
+  line-height: 42px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.collection-2018 .collection-18 .line {
+  margin: 40px auto;
+}
+
+.collection-2018 .collection-18__text {
+  font-family: PT Sans;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  margin-bottom: 61px;
+}
+
+.collection-2018 .collection-18__link {
+  font-family: PT Sans;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 12px 28px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.new-goods {
+  padding: 120px 0 150px;
+  background-color: #000000;
+}
+
+.new-goods__title {
+  font-family: Playfair Display;
+  font-size: 36px;
+  line-height: 42px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.new-goods .line {
+  margin: 40px auto 81px;
+}
+
+.new-goods .d-flex {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.new-goods .goods {
+  margin-right: 23px;
+}
+
+.new-goods .goods:nth-child(-n + 4) {
+  margin-bottom: 40px;
+}
+
+.new-goods .goods:nth-child(4n) {
+  margin-right: 0;
+}
+
+.brands {
+  background-color: #000000;
+  padding: 60px 0 80px;
+}
+
+.brands__title {
+  font-family: Playfair Display;
+  font-size: 36px;
+  line-height: 42px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.brands .line {
+  margin: 40px auto;
+}
+
+.brands .d-flex {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.brands__logo {
+  margin-right: 30px;
+}
+
+.brands__logo:last-child {
+  margin-right: 0;
+}
+
+.footer-top {
+  background-image: url(images/footer-background.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.footer-top .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 80px 0 101px 0;
+}
+
+.about {
+  width: 350px;
+}
+
+.about__title, .categories__title, .mailing-list__title {
+  font-family: Playfair Display;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  padding-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.about__text, .mailing-list__text {
+  font-family: PT Sans;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.categories {
+  width: 350px;
+}
+
+.categories .d-flex {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.categories__link {
+  font-family: PT Sans;
+  font-size: 14px;
+  line-height: 21px;
+  color: #d0d0d0;
+  padding: 10px 20px;
+  background-color: #0f0f0f;
+}
+
+.mailing-list {
+  width: 350px;
+}
+
+.mailing-list__text {
+  padding-bottom: 37px;
+}
+
+.last-line {
+  background-color: #0f0f0f;
+}
+
+.last-line .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.last-line__text {
+  font-family: PT Sans;
+  font-size: 12px;
+  line-height: 16px;
+  color: #d0d0d0;
+  padding: 17px 0;
+}
+
+.last-line__text:last-child {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=main.css.map */
