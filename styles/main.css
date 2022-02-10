@@ -55,11 +55,17 @@ table {
   border-spacing: 0;
 }
 
-* {
-  font-family: PT Sans;
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
+body {
+  background-color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 57.8%;
+  margin: 0 auto;
 }
 
 .d-flex {
@@ -68,13 +74,46 @@ table {
   display: flex;
 }
 
-.container {
-  width: 57.8%;
-  margin: 0 auto;
+.main-title {
+  font-family: Playfair Display;
+  font-size: 36px;
+  line-height: 42px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-a {
-  text-decoration: none;
+.main-text {
+  font-family: PT Sans;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.footer-title {
+  font-family: Playfair Display;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  padding-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn {
+  font-family: PT Sans;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+  padding: 12px 28px;
+  border: 1px solid #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.btn:hover {
+  background-color: #1f1f1f;
 }
 
 .line {
@@ -99,7 +138,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
   min-height: 325px;
   margin-bottom: 25px;
   background-color: #191b1c;
@@ -124,10 +162,6 @@ a {
   margin: 0;
 }
 
-.top {
-  background-color: #000000;
-}
-
 .top .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -141,7 +175,7 @@ a {
   padding: 12px 0;
 }
 
-.top .info__text, .top .info__link, .top .info__line, .top .account__link {
+.top .info__text, .top .info__line, .top .account__link {
   font-family: PT Sans;
   font-size: 12px;
   line-height: 16px;
@@ -157,13 +191,16 @@ a {
   padding: 0 10px;
 }
 
+.top .account__link:hover {
+  color: #ffffff;
+}
+
 .top .account__icon {
   padding: 0 7px 0 0;
   vertical-align: sub;
 }
 
 .navigation {
-  min-height: 80px;
   background-color: #0f0f0f;
   border: 1px solid #000000;
 }
@@ -206,12 +243,13 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 136px;
+  height: 80px;
   font-family: PT Sans;
   font-size: 14px;
   line-height: 18px;
   color: #969696;
-  width: 136px;
-  height: 80px;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -234,10 +272,11 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 810px;
-  background-image: url(images/background.png);
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  min-height: 810px;
+  background-image: url(images/background.png);
 }
 
 .hero .container {
@@ -251,25 +290,15 @@ a {
   font-size: 16px;
   line-height: 24px;
   color: #ffffff;
-  margin-top: 76px;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 76px;
 }
 
 .new .season {
   width: 54.2%;
   min-height: 730px;
   padding: 93px 80px;
-  background-color: #000;
-}
-
-.new .season__title, .new .collection__title {
-  font-family: Playfair Display;
-  font-size: 36px;
-  line-height: 42px;
-  color: #ffffff;
-  text-align: center;
-  letter-spacing: 1px;
 }
 
 .new .season .line {
@@ -277,9 +306,8 @@ a {
 }
 
 .new .season .d-flex {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .new .collection {
@@ -292,6 +320,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -299,30 +330,19 @@ a {
   width: 45.8%;
   padding: 100px 80px;
   background-image: url(images/collection.png);
-  background-position: center;
-  background-size: cover;
 }
 
 .new .collection .line {
   margin: 22px auto 29px;
 }
 
-.new .collection__link {
-  font-family: PT Sans;
-  font-size: 18px;
-  line-height: 23px;
-  color: #ffffff;
-  border: 1px solid #ffffff;
-  padding: 12px 28px;
-  letter-spacing: 0.1em;
-}
-
 .collection-2018 .suit {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   width: 45.8%;
   min-height: 600px;
   background-image: url(images/suit.png);
-  background-position: center;
-  background-size: cover;
 }
 
 .collection-2018 .collection-18 {
@@ -337,7 +357,6 @@ a {
           align-items: center;
   width: 54.2%;
   min-height: 600px;
-  background-color: #000000;
   text-align: center;
 }
 
@@ -345,63 +364,25 @@ a {
   width: 45%;
 }
 
-.collection-2018 .collection-18__title {
-  font-family: Playfair Display;
-  font-size: 36px;
-  line-height: 42px;
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
 .collection-2018 .collection-18 .line {
   margin: 40px auto;
 }
 
-.collection-2018 .collection-18__text {
-  font-family: PT Sans;
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
+.collection-2018 .collection-18 .main-text {
   margin-bottom: 61px;
-}
-
-.collection-2018 .collection-18__link {
-  font-family: PT Sans;
-  font-size: 18px;
-  line-height: 23px;
-  color: #ffffff;
-  border: 1px solid #ffffff;
-  padding: 12px 28px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
 }
 
 .new-goods {
   padding: 120px 0 150px;
-  background-color: #000000;
-}
-
-.new-goods__title {
-  font-family: Playfair Display;
-  font-size: 36px;
-  line-height: 42px;
-  color: #ffffff;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 .new-goods .line {
-  margin: 40px auto 81px;
+  margin: 40px auto 84px;
 }
 
 .new-goods .d-flex {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .new-goods .goods {
@@ -417,18 +398,7 @@ a {
 }
 
 .brands {
-  background-color: #000000;
   padding: 60px 0 80px;
-}
-
-.brands__title {
-  font-family: Playfair Display;
-  font-size: 36px;
-  line-height: 42px;
-  color: #ffffff;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 .brands .line {
@@ -450,9 +420,10 @@ a {
 }
 
 .footer-top {
-  background-image: url(images/footer-background.png);
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-image: url(images/footer-background.png);
 }
 
 .footer-top .container {
@@ -462,31 +433,13 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 80px 0 101px 0;
 }
 
-.about {
-  width: 350px;
-}
-
-.about__title, .categories__title, .mailing-list__title {
-  font-family: Playfair Display;
-  font-size: 24px;
-  line-height: 28px;
-  color: #ffffff;
-  padding-bottom: 40px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.about__text, .mailing-list__text {
-  font-family: PT Sans;
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
-}
-
-.categories {
+.about, .categories, .mailing-list {
   width: 350px;
 }
 
@@ -504,12 +457,68 @@ a {
   background-color: #0f0f0f;
 }
 
-.mailing-list {
-  width: 350px;
+.categories__link:hover {
+  background-color: #1f1f1f;
 }
 
-.mailing-list__text {
+.categories .watches, .categories .bracelets {
+  margin: 0 20px 20px 0;
+}
+
+.categories .belts {
+  margin-bottom: 20px;
+}
+
+.categories .jewerlies {
+  margin-right: 20px;
+}
+
+.mailing-list .main-text {
   padding-bottom: 37px;
+}
+
+.mailing-list .email__input {
+  width: 58.7%;
+  height: 42px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: none;
+  color: #efefef;
+}
+
+.mailing-list .email__input::-webkit-input-placeholder {
+  color: #efefef;
+}
+
+.mailing-list .email__input:-ms-input-placeholder {
+  color: #efefef;
+}
+
+.mailing-list .email__input::-ms-input-placeholder {
+  color: #efefef;
+}
+
+.mailing-list .email__input::placeholder {
+  color: #efefef;
+}
+
+.mailing-list .email__input:focus-visible {
+  outline: none;
+}
+
+.mailing-list .email__btn {
+  font-family: PT Sans;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  padding: 10px 20px;
+  background-color: #0f0f0f;
+  border: none;
+  letter-spacing: 0.05em;
+}
+
+.mailing-list .email__btn:hover {
+  background-color: #1f1f1f;
 }
 
 .last-line {
@@ -538,5 +547,74 @@ a {
 
 .last-line__text:last-child {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1440px) {
+  .new .season {
+    padding: 65px 35px;
+  }
+  .new .season .new-3 {
+    margin: 0;
+  }
+  .goods {
+    min-width: 200px;
+    min-height: 330px;
+    margin: 0 20px 20px 0;
+  }
+  .goods .goods-image {
+    min-height: 280px;
+    margin-bottom: 20px;
+  }
+  .collection-2018 .suit {
+    min-height: 500px;
+  }
+  .collection-2018 .collection-18 {
+    min-height: 500px;
+  }
+  .collection-2018 .collection-18 .container {
+    width: 60%;
+  }
+  .new-goods {
+    padding: 80px 0;
+  }
+  .new-goods .container {
+    width: 75%;
+  }
+  .new-goods .d-flex {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .new-goods .goods {
+    margin: 10px;
+  }
+  .new-goods .goods:nth-child(4n) {
+    margin: 10px;
+  }
+  .brands__logo {
+    margin-right: 25px;
+    width: 200px;
+  }
+  .footer .container {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .container {
+    width: 75%;
+  }
+  .navigation .menu__link {
+    height: 70px;
+  }
+  .hero {
+    min-width: 600px;
+  }
+  .hero .container {
+    width: 50%;
+  }
+  .hero__logo {
+    width: 270px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

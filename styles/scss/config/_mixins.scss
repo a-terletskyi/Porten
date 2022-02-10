@@ -11,14 +11,18 @@
     color: $color;
 }
 
-@mixin square($w, $h, $bg-color) {
+@mixin square($w, $h) {
     width: $w;
     height: $h;
-    background-color: $bg-color;
 }
 
 @mixin background {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+@mixin transform {
+    text-align: center;
+    text-transform: uppercase;
 }

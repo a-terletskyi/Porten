@@ -1,12 +1,9 @@
-* {
-    font-family: PT Sans;
-    font-size: 14px;
-    line-height: 21px;
-    color: #ffffff;
+body {
+    background-color: $main-color;
 }
 
-.d-flex {
-    display: flex;
+a {
+    text-decoration: none;
 }
 
 .container {
@@ -14,6 +11,23 @@
     margin: 0 auto;
 }
 
-a {
-    text-decoration: none;
+.d-flex {
+    display: flex;
+}
+
+.main-title {
+    @include text(Playfair Display, 36px, 42px, $main-text-color);
+    @include transform;
+    letter-spacing: 1px;
+}
+
+.main-text {
+    @include text(PT Sans, 14px, 21px, $main-text-color);
+}
+
+.footer-title {
+    @include text(Playfair Display, 24px, 28px, $main-text-color);
+    padding-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }

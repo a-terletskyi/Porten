@@ -1,0 +1,11 @@
+.btn {
+    @include text(PT Sans, 18px, 23px, #ffffff);
+    padding: 12px 28px;
+    border: 1px solid #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.btn:hover {
+    background-color: #1f1f1f;
+}

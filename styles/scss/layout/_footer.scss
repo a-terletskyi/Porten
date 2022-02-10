@@ -1,36 +1,19 @@
 .footer-top {
+    @include background;
     background-image: url(images/footer-background.png);
-    background-position: center;
-    background-size: cover;
 
     .container {
-        display: flex;
-        justify-content: space-between;
+        @include d-flex(space-between,flex-start);
         padding: 80px 0 101px 0;
     }
 }
 
 .about {
     width: 350px;
-
-    &__title {
-        @include text(Playfair Display, 24px, 28px, #ffffff);
-        padding-bottom: 40px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-    }
-
-    &__text {
-        @include text(PT Sans, 14px, 21px, #ffffff);
-    }
 }
 
 .categories {
-    width: 350px;
-
-    &__title {
-        @extend .about__title;
-    }
+    @extend .about;
 
     .d-flex {
         flex-wrap: wrap;
@@ -39,27 +22,70 @@
     &__link {
         @include text(PT Sans, 14px, 21px, #d0d0d0);
         padding: 10px 20px;
-        background-color: #0f0f0f;
+        background-color: $second-color;
     }
-    // треба добавити додатковий клас і задати маржини
+
+    &__link:hover {
+        background-color: $hover-color;
+    }
+
+    .watches {
+        margin: 0 20px 20px 0;
+    }
+
+    .bracelets {
+        @extend .watches;
+    }
+
+    .belts {
+        margin-bottom: 20px;
+    }
+
+    .jewerlies {
+        margin-right: 20px;
+    }
 }
 
 .mailing-list {
-    width: 350px;
+    @extend .about;
 
-    &__title {
-        @extend .about__title;
-    }
-
-    &__text {
-        @extend .about__text;
+    .main-text {
         padding-bottom: 37px;
     }
-    // застилізувати форму, уточнити чи правильно я її створив
+
+    .email {
+        &__input {
+            @include square(58.7%, 42px);
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.4);
+            border: none;
+            color: #efefef;
+        }
+
+        &__input::placeholder {
+            color: #efefef;
+        }
+
+        &__input:focus-visible {
+            outline: none;
+        }
+
+        &__btn {
+            @include text(PT Sans, 14px, 21px, $main-text-color);
+            padding: 10px 20px;
+            background-color: $second-color;
+            border: none;
+            letter-spacing: 0.05em;
+        }
+
+        &__btn:hover {
+            background-color: $hover-color;
+        }
+    }
 }
 
 .last-line {
-    background-color: #0f0f0f;
+    background-color: $second-color;
 
     .container {
         @include d-flex(space-between, center);

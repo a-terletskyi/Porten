@@ -4,12 +4,12 @@
  'scss/base/fonts';
 // 
 @import
-'scss/config/base',
- 'scss/config/variables',
- 'scss/config/mixins';
+'scss/config/variables',
+'scss/config/mixins',
+'scss/config/base';
 //  
 @import
- 'scss/objects/buttons',
+'scss/objects/button',
  'scss/objects/line';
 //  
 @import

@@ -1,6 +1,4 @@
 .top {
-    background-color: #000000;
-
     .container {
         @include d-flex(space-between, center);
         padding: 12px 0;
@@ -8,16 +6,12 @@
 
     .info {
         &__text {
-            @include text(PT Sans, 12px, 16px, #969696);
+            @include text(PT Sans, 12px, 16px, $second-text-color);
         }
 
         &__icon {
             padding: 0 11px 0 0;
             vertical-align: sub;
-        }
-
-        &__link {
-            @extend .info__text;
         }
 
         &__line {
@@ -31,6 +25,10 @@
             @extend .info__text;
         }
 
+        &__link:hover {
+            color: $main-text-color;
+        }
+
         &__icon {
             padding: 0 7px 0 0;
             vertical-align: sub;
@@ -39,9 +37,8 @@
 }
 
 .navigation {
-    min-height: 80px;
-    background-color: #0f0f0f;
-    border: 1px solid #000000;
+    background-color: $second-color;
+    border: 1px solid $main-color;
 
     .container {
         @include d-flex(space-between, center);
@@ -56,15 +53,14 @@
 
         &__link {
             @include d-flex(center, center);
-            @include text(PT Sans, 14px, 18px, #969696);
-            width: 136px;
-            height: 80px;
-            text-transform: uppercase;
+            @include square(136px, 80px);
+            @include text(PT Sans, 14px, 18px, $second-text-color);
+            @include transform;
         }
 
         &__link:hover {
-            background-color: #1f1f1f;
-            color: #ffffff;
+            background-color: $hover-color;
+            color: $main-text-color;
         }
 
         .search {
