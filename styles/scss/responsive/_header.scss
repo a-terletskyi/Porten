@@ -1,0 +1,39 @@
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 1240px) {
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        .container {
+            width: 90%;
+            padding: 15px 0;
+        }
+
+        .navigation .menu__link {
+            display: none;
+        }
+
+        .search{
+            margin: 0 30px;
+        }
+
+        .burger {
+            @include square(20px, 17px, transparent);
+            @include d-flex(space-between, flex-end);
+            flex-direction: column;
+
+            &__line {
+                @include square(23px, 2px, $main-text-color);
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+}

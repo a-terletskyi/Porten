@@ -245,6 +245,7 @@ a {
           align-items: center;
   width: 136px;
   height: 80px;
+  background-color: unset;
   font-family: PT Sans;
   font-size: 14px;
   line-height: 18px;
@@ -480,6 +481,7 @@ a {
 .mailing-list .email__input {
   width: 58.7%;
   height: 42px;
+  background-color: unset;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.4);
   border: none;
@@ -549,6 +551,43 @@ a {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 768px) {
+  .header .container {
+    width: 90%;
+    padding: 15px 0;
+  }
+  .header .navigation .menu__link {
+    display: none;
+  }
+  .header .search {
+    margin: 0 30px;
+  }
+  .header .burger {
+    width: 20px;
+    height: 17px;
+    background-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header .burger__line {
+    width: 23px;
+    height: 2px;
+    background-color: #ffffff;
+    display: block;
+  }
+}
+
 @media screen and (max-width: 1440px) {
   .new .season {
     padding: 65px 35px;
@@ -615,6 +654,13 @@ a {
   }
   .hero__logo {
     width: 270px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .brands .d-flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 /*# sourceMappingURL=main.css.map */

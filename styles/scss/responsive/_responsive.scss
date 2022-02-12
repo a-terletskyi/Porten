@@ -90,6 +90,11 @@
 }
 
 @media screen and (max-width: 768px) {
+.brands{
+    .d-flex{
+        flex-wrap: wrap;
+    }
+}
 }
 
 @media screen and (max-width: 576px) {

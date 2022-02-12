@@ -11,9 +11,10 @@
     color: $color;
 }
 
-@mixin square($w, $h) {
+@mixin square($w, $h, $c: unset) {
     width: $w;
     height: $h;
+    background-color: $c;
 }
 
 @mixin background {
